@@ -1,12 +1,11 @@
 import React from 'react';
+import s from './ImageGalleryItem.module.css';
 
-const ImageGalleryItem = ({ webformatURL, largeImageURL }) => {
+const ImageGalleryItem = ({ webformatURL, largeImageURL, openModal }) => {
   return (
-    <div>
-      <a href={largeImageURL}>
-        <img src={webformatURL} alt="" />
-      </a>
-    </div>
+    <li className={s.moduleItem}>
+      <img src={webformatURL} alt="" onClick={() => openModal(largeImageURL)} />
+    </li>
   );
 };
 

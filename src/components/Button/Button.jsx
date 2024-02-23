@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Button = () => {
+const Button = ({ handleLoadMore }) => {
   return (
     <div>
-      <button>Load more</button>
+      <button onClick={handleLoadMore}>Load more</button>
     </div>
   );
 };
