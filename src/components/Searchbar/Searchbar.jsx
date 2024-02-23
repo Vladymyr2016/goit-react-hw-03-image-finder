@@ -1,12 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class Searchbar extends Component {
-  render() {
-    return;
-    <header className="searchbar">
-      <form className="form">
+const Searchbar = () => {
+  return (
+    <header class="searchbar">
+      <form class="form">
         <button type="submit" class="button">
-          <span className="button-label">Search</span>
+          <span class="button-label">Search</span>
         </button>
 
         <input
@@ -17,20 +16,8 @@ class Searchbar extends Component {
           placeholder="Search images and photos"
         />
       </form>
-    </header>;
-  }
-}
+    </header>
+  );
+};
 
 export default Searchbar;
-
-// import React, { Component } from 'react';
-
-// class Searchbar extends Component {
-//   render() {
-//     return (
-//       <div>
-//
-//       </div>
-//     );
-//   }
-// }
